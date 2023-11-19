@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio input element</title>
+</head>
+<body>
+
+    <form action="/server">
+        <div>
+            <input type="radio" name="fruits" id="apple" value="Apple">
+            <label for="apple">Apple</label>
+            
+            <input type="radio" name="fruits" id="mango" value="Mango">
+            <label for="mango">Mango</label>
+    
+            <input type="radio" name="fruits" id="banana" value="banana">
+            <label for="banana">banana</label>
+        </div>
+    
+        <div>
+            <input type="checkbox" name="sub" id="math" value="Math">
+            <label for="math">Math</label>
+    
+            <input type="checkbox" name="sub" id="sci" value="Sci">
+            <label for="sci">Science</label>
+    
+            <input type="checkbox" name="sub" id="comp" value="Comp">
+            <label for="comp">Computer</label>
+            
+            <!--Dropdown-->
+            <div>
+                choose your profession
+                <select name="profession" id="profession">
+                    <option>Select your option</option>
+                    <option value="Std">Student</option>
+                    <option value="Dev" selected>Developer</option>
+                    <option value="Eng">Engineer</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="vol">Choose your Volume</label>
+                <input 
+                type="range" 
+                name="Vol" 
+                id="vol" 
+                min="0" 
+                max="100" 
+                step="10"
+                value="50">
+            </div>
+
+            <br>
+
+            <label for="feedback">Plese give your valuable feedback</label>
+            <textarea name="feedback" id="feedback" cols="15" rows="10" placeholder="Your feedback here"></textarea>
+
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>

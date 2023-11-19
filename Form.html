@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form in HTML</title>
+  </head>
+  <body>
+    <form action="/server">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter username" id="username" />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter password" id="password" />
+      </div>
+
+      <div>
+        <label for="number">Number</label>
+        <input type="number" placeholder="Enter number" id="number" />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter email" id="email" />
+      </div>
+      <button type="submit">Submit</button>
+      <button type="button">Hello</button>
+      <button type="reset">reset</button>
+      <br />
+      <input type="Button" value="click me" />  <!--This is not a good way to create button using input tag we must use button tag for it-->
+      <input type="submit" value="submit" />    <!--use button tag instead of input for submit-->
+    </form>
+
+    <hr />
+    <form action="https://www.youtube.com/results?search">
+      <input type="text" placeholder="Search in youtube" name="search_query" />  <!--name attribute-->
+      <button type="submit">Search</button>
+    </form>
+  </body>
+</html>
