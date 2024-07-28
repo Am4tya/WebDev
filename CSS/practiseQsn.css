@@ -1,0 +1,16 @@
+* {  /*Universal Selector*/
+  font-family: 'Courier New', Courier, monospace;
+} 
+
+h1 { /*Element Selector */
+  color: #1b74e4;
+}
+
+#searchbtn {  /*Id Selector */
+  background-color: black;
+  color: white;
+}
+
+.userbtn {  /*Class Selector*/
+    background-color: aqua;
+}

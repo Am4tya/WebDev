@@ -1,0 +1,128 @@
+h3 {
+  background-color: antiquewhite !important;
+}
+
+* {
+  /* Universal Selector */
+  font-family: "Courier New";
+}
+
+h1,
+h3 {
+  /* Element Selector */
+  color: #b92b27;
+}
+
+#login {
+  background-color: white;
+}
+
+#signup {
+  /* Id Selector */
+  background-color: #b92b27;
+  color: white;
+}
+
+.upvote {
+  /* Class Selector */
+  background-color: green;
+  color: aliceblue;
+}
+
+#myId p {
+  /*div[id="myId"] -->Yesari lekhna ni milxa */
+  color: green; 
+}
+
+/* descendent selector */
+.post a {
+  color: purple;
+  background-color: yellow;
+}
+
+nav ul li a {
+  /* descendent selector */
+  color: hotpink;
+}
+
+p + h3 {
+  text-decoration: underline;
+}
+
+.upvote + button {
+  background-color: cornflowerblue;
+  color: darkblue;
+}
+
+div > input {
+  /* Child combinator where we can take only one step forward */
+  background-color: darkgray;
+}
+
+input[type="text"] {
+  /* Attribute selector */
+  color: red;
+}
+
+input[type="password"] {
+  /* Attribute selector */
+  color: white;
+}
+
+input[type] {
+  /* Attribute selector */
+  color: ghostwhite;
+}
+
+#myID p {
+  color: green;
+  /* or we can div[type="myID"] {
+               color: green; 
+}
+*/
+}
+
+/* Pseudo class: hover, active, checked, nth-of-type */
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+button:active {
+  background-color: blue;
+}
+
+p:active {
+  font-weight: bold;
+  color: green;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: red;
+}
+div:nth-of-type(3n) { 
+  background-color: blanchedalmond;
+}
+
+/* Pseudo Element */
+h1::first-letter {
+  color: blue;
+}
+
+p::first-line {
+  color: purple;
+}
+
+p::selection {
+  background-color: rgb(red, green, blue);
+}
+
+/* Cascading and specificity */
+h3 {
+  background-color: yellow;
+}
+
+h3 {
+  background-color: blue;  
+}
