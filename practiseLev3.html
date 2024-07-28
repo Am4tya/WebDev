@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise</title>
+</head>
+<body>
+    <table border="black">
+    <caption>Student Information</caption>
+    <tr>
+        <th rowspan="6">Info</th>
+        <th rowspan="2">Name</th>
+        <th colspan="2">Address</th>
+    </tr>
+
+    <tr>
+        <th>City</th>
+        <th>House</th>
+    </tr>
+
+    <tr>
+        <td>A</td>
+        <td>Delhi</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>B</td>
+        <td>Mumbai</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td>Kolkata</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>D</td>
+        <td>Pune</td>
+        <td>4</td>
+    </tr>
+    
+    </table>
+    <br>
+    <br>
+    <br>
+    <!-- Q2. Recreate the following form using HTML -->
+    <form action="/server">
+        <h2>Feedback Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <br> <br>
+
+        <label for="gender">Sex:</label>
+        <input type="radio" name="gender" id="gender">
+        <label for="M">Male</label>
+        <input type="radio" name="gender" id="gender">
+        <label for="F">Female</label>
+        <br> <br>
+        
+        <label for="country">country:</label>
+        <select name="country" id="country">
+            <option value="">Select an option</option>
+            <option value="In">India</option>
+            <option value="Us">USA</option>
+            <option value="Np">Nepal</option>
+            <option value="Ca">Canada</option>
+        </select>
+        <br> <br>
+
+        <label for="msg">Message:</label>
+        <textarea name="msg" id="msg" cols="30" rows="4"></textarea>
+        <br> <br>
+
+        <input type="checkbox" id="news" name="news" value="subscribed">
+        <label for="news">Subscribe?</label> <br> <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

@@ -6,10 +6,51 @@
     <title>Input Element checkbox</title>
   </head>
   <body>
-    <form action="/server">
-      <input type="checkbox" id="age" checked />
+    <form action="/action">
+      <input type="checkbox" name="verify" id="age" checked />
       <label for="age">I am 18+</label>
       <button type="submit">Submit</button>
+
+      <div>
+        <input type="radio" name="fruit" id="apple" value="apple">
+        <label for="apple">apple</label>
+
+        <input type="radio" name="fruit" id="mango" value="mango">
+        <label for="mango">mango</label>
+
+        <input type="radio" name="fruit" id="banana" value="banana">
+        <label for="banana">banana</label>
+      </div>
+      <br>
+      <div>
+        choose your subjects
+        <input type="checkbox" name="sub" id="math" value="math">
+        <label for="math">Math</label>
+
+        <input type="checkbox" name="sub" id="science" value="sci">
+        <label for="science">Science</label>
+
+        <input type="checkbox" name="sub" id="computer" value="comp">
+        <label for="computer">Computer</label>
+      </div>
+
+      <div>
+        Choose your Profession:
+        <select name="Profession" id="Profession">
+          <option>Select option</option>
+          <option value="std">Student</option>
+          <option value="dev">Developer</option>
+        </select>
+      </div>
+      <label for="vol">Select your volume level:</label>
+      <input type="range" name="vol" id="vol" min="0" max="100" step="10" value="40">
+      <br>
+
+    <label for="feedback">Give your valuable feedback: </label>
+    <textarea name="feedback" id="feedback" rows="4" cols="15" placeholder="Write your feedback HERE!"></textarea>
+    <button type="submit">Submit</button>
+
     </form>
+    
   </body>
 </html>
