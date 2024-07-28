@@ -1,0 +1,42 @@
+section {
+    margin-top: 100px;
+}
+
+div {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #7aa874;
+    border: 2px solid black;
+    margin: 10px auto;
+}
+
+div:nth-of-type(2n) {
+    background-color: #f7db6a;
+}
+
+div:nth-last-of-type(3n) {
+    background-color: #ebb02d;
+}
+
+/* transform */
+#one {
+    transform: rotate(45deg);
+
+}
+
+#two {
+    transform: scale(1, 0.5); /*2 is x-axis ie. width | 0.5 is y-axis ie. height*/
+}
+
+#three {
+    transform: translateX(-100px); /*for x-axis translateX for y-axis translateY for both use translate() only*/
+}
+
+#four {
+    transform: skew(30deg);
+}
+
+#five {
+    transform: rotate(30deg) translateX(150px);
+}
