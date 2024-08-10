@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="/form">
+        <h2>Registration Form</h2>
+
+        <div>
+            <label for="fn">First name:</label>
+            <input type="text" placeholder="Enter your first name" name="fname" id="fn" />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <label for="ln">Last name:</label>
+            <input type="text" placeholder=" Enter your last Name" name="lname" id="ln" />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <label for="roll">Enter your Roll.no</label>
+            <input type="number" name="roll" id="roll" />
+        </div>
+        <br />
+        <br />
+
+        <div>
+            <label for="dob">Enter your date of birth:</label>
+            <input type="date" name="dob" id="dob" />
+        </div>
+
+        <br />
+        <br />
+        <div>
+            <label for="age">Enter your age:</label>
+            <input type="number" placeholder="Enter age" id="age" />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <label for="num">Enter your phone number: </label>
+            <input type="number" name="num" id="num" />
+        </div>
+        <br />
+        <br />
+
+        <div>
+            <label for="file">Choose your image</label>
+            <input type="file" name="file" id="file" />
+        </div>
+        <br /><br />
+
+        <div>
+            <label for="gender">plese select your gender:</label>
+            <select name="gender" id="gender">
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+                <option value="o">Others</option>
+            </select>
+        </div>
+        <br />
+        <br />
+        <div>
+            <label for="terms">Do you agree to all terms of service?</label>
+            <input type="checkbox" name="terms" id="terms" />
+            Yes, I agree
+        </div>
+        <br /><br />
+        <button type="submit">Register</button>
+    </form>
+</body>
+
+</html>
